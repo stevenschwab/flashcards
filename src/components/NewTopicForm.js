@@ -18,7 +18,7 @@ export default function NewTopicForm() {
       return;
     }
 
-    dispatch(addTopic({ id: uuidv4(), name, icon }));
+    dispatch(addTopic({ id: uuidv4(), name: name, icon: icon}));
     history.push(ROUTES.topicsRoute());
   };
 
